@@ -54,3 +54,4 @@ if [ -f ~/.start_ssl ]; then
     . ~/.start_ssl
 fi
 
+export EDITOR=vim
