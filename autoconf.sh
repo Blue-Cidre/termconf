@@ -56,6 +56,18 @@ echo "Finished populating config files from $conf_path to home dir."
 
 }
 
+function help_option (){
+#####################################################
+# Print out possible options on -h option           #
+#####################################################
+
+echo "help page"
+
+}
+
+
+
+
 ###############################################
 # get options and run the specified functions #
 ###############################################
@@ -67,7 +79,7 @@ while getopts ":iborh" option; do
 	o)	install;;
 	r)	echo "Restore not implemented yet"
 	h)	echo "help not implemented yet"
-  	\?)	echo "Error: Didn't copy start_ssh.sh anywhere.";;  
+  	\?)	echo "Error: Ivalid option, try -h for a list of options";;  
    esac
 done
 
