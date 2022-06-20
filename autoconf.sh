@@ -99,7 +99,7 @@ while getopts ":iborh" option; do
 	i)	backup; install;;
 	b)	backup;;
 	o)	install;;
-	r)	echo "Restore not implemented yet"
+	r)	restore_promt;;
 	h)	echo "help not implemented yet"
   	\?)	echo "Error: Ivalid option, try -h for a list of options";;  
    esac
