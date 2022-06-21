@@ -35,7 +35,7 @@ fi
 function install () {
 ######################################################
 # make backup of current conf state, clone p10k and  #
-#  populate the config files                         #
+# populate the config files                          #
 ######################################################
 
 
@@ -100,7 +100,7 @@ while getopts ":iborh" option; do
 	b)	backup;;
 	o)	install;;
 	r)	restore_promt;;
-	h)	echo "help not implemented yet"
+	h)	echo "help not implemented yet";;
   	\?)	echo "Error: Ivalid option, try -h for a list of options";;  
    esac
 done
